@@ -269,3 +269,8 @@ input, select, #mensagem{
     color: red;
 }
 /*Fim Formulário*/
+
+/*Acessibilidade*/
+#conteudo_acessibilidade{
+    margin-bottom: 1%;
+}
