@@ -9,8 +9,8 @@
     <meta name="keywords" content="HTML, comentários, Metadados, Lista não ordenada, Lista Ordenada, Layout">
     <meta name="author" content="Matheus Porto">
     <title>Aulas Desenvolvimento Web 1</title> <!--Título do Site-->
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header id="topo"> <!--Cabeçalho-->
@@ -53,6 +53,18 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
 
+        <!--Libras-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        
         <ul id="breadcrumb">
             <li><a href="index.html">Menu</a></li>
             <li>Acessibilidade</li>
