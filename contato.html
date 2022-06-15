@@ -25,7 +25,7 @@
             <ul id="acess_funcoes">
                 <li id="pgacess"><a href="acessibilidade.html">ACESSIBILIDADE</a></li>
                 <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE</a></li>
-                <li class="contraste"><a href="javascript:void(0);" id="semcontraste">CONTRASTE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="semcontraste">S/CONTRASTE</a></li>
                 <li class="fonte"><a href="javascript:void(0);" id="aumentar">A +</a></li>
                 <li class="fonte"><a href="javascript:void(0);" id="diminuir">A -</a></li>
             </ul>
@@ -74,7 +74,7 @@
     <main id="conteudo"> <!--Conteúdo-->
         <h1>Fale Conosco</h1>
         <div id="conteudo_form">
-            <form name="contato" method="post">
+            <form name="contato" method="post" action="javascript: void(0)">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     <label for="nome" class="required">Nome</label><br>
@@ -84,19 +84,19 @@
                     <input type="date" name="data" id="data" required><br>
     
                     <label for="cpf" class="required">CPF</label><br>
-                    <input type="text" name="cpf" id="cpf" placeholder="999.999999-99" required><br>
+                    <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required minlength="14"><br>
     
                     <label for="telefone">Telefone</label><br>
-                    <input type="text"name="telefone" id="telefone" placeholder="(99)99999-9999"><br>
+                    <input type="text"name="telefone" id="telefone" placeholder="(99) 99999-9999" minlength="15"><br>
     
                     <label for="email" class="required">E-mail</label><br>
-                    <input type="text" name="email"id="email" required placeholder="nome@site.com.br">
+                    <input type="email" name="email"id="email" required placeholder="nome@site.com.br">
                 </fieldset>  
     
                 <fieldset>
                     <legend>Dados de Endereço</legend>
                     <label for="cep" class="required">CEP</label><br>
-                    <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
+                    <input type="text" name="cep" id="cep" placeholder="99999-999" required minlength="9"><br>
     
                     <label for="rua">Rua/Avenida</label><br>
                     <input type="text" name="rua" id="rua"><br>
@@ -143,6 +143,12 @@
         <p>Todos os direitos reservados &copy; 2022</p>
     </footer>
 
-    <script src="js/dropdown.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="js/cep.js"></script>
+    <script src="js/fonte.js"></script>
+    <script src="js/contraste.js"></script>
 </body>
 </html>
